@@ -27,7 +27,7 @@ def generate_number():
 def guessing_loop(_actual):
     """Primary guessing loop."""
     _guessing = True
-    _counter = 3
+    _counter = 30
     while _guessing and _counter > 0:
         try:
             _guess = int(input("Please select a integer "))
@@ -35,6 +35,8 @@ def guessing_loop(_actual):
             _counter -= 1
         except ValueError:
             print("Your input must be an integer")
+    if _guessing:
+        print("BAH BAH.... the number was " + str(_actual))
 
 
 def check_win(_guess, _actual, _counter):
