@@ -40,16 +40,11 @@ class Student():    #This is an object name
 s1 = Student('John', 'Doe', 2, 'CSI', 'CNCS', 3.1)
 s2 = Student('Jane', 'Smith', 3, 'CNCS', 'CSI', 3.5)
 
-<<<<<<< Updated upstream
-    
-=======
 print(s1.addFullName())
 print(s2.addFullName())
 print(Student.addFullName(s2))
 #s1.reset()
 print("No data here:",s1.addFullName())
->>>>>>> Stashed changes
-
 '''
 Code using the class varialbe apply_honors
 '''
