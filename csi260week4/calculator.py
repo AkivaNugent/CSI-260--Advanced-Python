@@ -1,20 +1,13 @@
-from circle import Circle
-from square import Square
+from cylinder import Cylinder
 
-r = int(input("Enter the radius of the circle: "))
+def CalcCylinder():
+    """Take dimensional inputs and calculate are and perimeter"""
+    cyl = Cylinder(int(input("Enter radius: ")),
+                   int(input("Enter Height: "))
+                   )
 
-c = Circle(r)
+    print(f' The area is:      {cyl.get_s_area():.2f}')
+    print(f' The perimeter is: {cyl.get_perimeter():.2f}')
 
-a = c.get_area()
-p = c.get_perimeter()
 
-print(a)
-print(p)
-
-c.diameter = 200
-print(c.get_perimeter())
-
-s = Square(int (input("input square side")))
-
-print(s.get_area())
-print(s.get_perimeter())
+CalcCylinder()
