@@ -1,7 +1,9 @@
+"""Calculations for cylinder object."""
 from cylinder import Cylinder
 
+
 def CalcCylinder():
-    """Take dimensional inputs and calculate are and perimeter"""
+    """Take dimensional inputs and calculate are and perimeter."""
     cyl = Cylinder(int(input("Enter radius: ")),
                    int(input("Enter Height: "))
                    )
